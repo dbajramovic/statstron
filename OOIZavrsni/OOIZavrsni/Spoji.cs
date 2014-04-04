@@ -13,7 +13,7 @@ namespace OOIZavrsni
 {
     public partial class Spoji : Form
     {
-        Klub selektirani_klub = new Klub("N/A","N/A");
+        Klub selektirani_klub = new Klub("N/A","N/A","n/a");
         Igrac selektirani_igrac = new Igrac("N/A", "N/A");
         public Spoji()
         {

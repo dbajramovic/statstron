@@ -31,7 +31,6 @@ namespace OOIZavrsni
             DAL.DAL.KlubDAO cd2 = new DAL.DAL.KlubDAO();
             Klubovi = cd2.getAll();
             d1.terminirajKonekciju();
-            comboBox2.DataSource = Klubovi;
             comboBox1.DataSource = Igraci;
         }
 
@@ -58,13 +57,13 @@ namespace OOIZavrsni
                     while (ide)
                     {
                         float PCT_Sve = 0, ThreePCT = 0, TwoPCT = 0, FreePCT = 0;
-                        string baci, Tim, Pozicija="N/A", tempPCT_Sve, tempThreePCT, tempTwoPCT, tempFreePCT;
-                        int starost=0, Broj_Utakmica, Broj_Utakmica_Starter=0, Broj_Minuta, Pogodjeni_Sve, Pokusani_Sve, ThreeMade, ThreeAtt, TwoMade, TwoAtt, FreeMade,FreeAtt,ORB,DRB,TRB,AST,STL,BLK,TO,FLS,PTS;
+                        string godina_sezone,baci, Tim="N/A", Pozicija="N/A", tempPCT_Sve, tempThreePCT, tempTwoPCT, tempFreePCT;
+                        int TimID =0,starost=0, Broj_Utakmica, Broj_Utakmica_Starter=0, Broj_Minuta, Pogodjeni_Sve, Pokusani_Sve, ThreeMade, ThreeAtt, TwoMade, TwoAtt, FreeMade,FreeAtt,ORB,DRB,TRB,AST,STL,BLK,TO,FLS,PTS;
                         linija = sr.ReadLine();
                         if (linija == null) ide = false;
                         if (!checkBox1.Checked)
                         {
-                            baci = linija.Split(',')[0];
+                            godina_sezone = linija.Split(',')[0];
                             starost = Convert.ToInt32(linija.Split(',')[1]);
                             Tim = linija.Split(',')[2];
                             baci = linija.Split(',')[3];
@@ -96,7 +95,7 @@ namespace OOIZavrsni
                         }
                         else
                         {
-                            baci = linija.Split(',')[0];
+                            godina_sezone = linija.Split(',')[0];
                             baci = linija.Split(',')[1];
                             Broj_Utakmica = Convert.ToInt32(linija.Split(',')[2]);
                             Broj_Minuta = Convert.ToInt32(linija.Split(',')[3]);
@@ -132,9 +131,14 @@ namespace OOIZavrsni
                         if(FreeAtt!=0 || FreeMade!=0)
                         FreePCT = ((float)FreeMade / FreeAtt)*100;
                         broj++;
+                        foreach (Klub k in Klubovi)
+                        {
+                            if (k.DajSkracenica == Tim)
+                                TimID = k.DajIDKluba;
+                        }
                         if (!checkBox1.Checked)
                         {
-                            SezonskiPodaci f = new SezonskiPodaci(starost, comboBox2.SelectedIndex + 1, Pozicija, Broj_Utakmica, Broj_Utakmica_Starter, Broj_Minuta, Pokusani_Sve, Pogodjeni_Sve, ThreeAtt, ThreeMade, TwoAtt, TwoMade, FreeAtt, FreeMade, ORB, DRB, AST, BLK, STL, TO, FLS, PTS, comboBox1.SelectedIndex + 1);
+                            SezonskiPodaci f = new SezonskiPodaci(godina_sezone,starost, TimID, Pozicija, Broj_Utakmica, Broj_Utakmica_Starter, Broj_Minuta, Pokusani_Sve, Pogodjeni_Sve, ThreeAtt, ThreeMade, TwoAtt, TwoMade, FreeAtt, FreeMade, ORB, DRB, AST, BLK, STL, TO, FLS, PTS, comboBox1.SelectedIndex + 1);
                             f.DajProcenat_Sut_Sve = PCT_Sve;
                             f.DajProcenat_Sut_3 = ThreePCT;
                             f.DajProcenat_Sut_2 = TwoPCT;
@@ -143,7 +147,7 @@ namespace OOIZavrsni
                         }
                         else
                         {
-                            SezonskiPodaci f = new SezonskiPodaci(0, 31, "N/A", Broj_Utakmica, Broj_Utakmica, Broj_Minuta, Pokusani_Sve, Pogodjeni_Sve, ThreeAtt, ThreeMade, TwoAtt, TwoMade, FreeAtt, FreeMade, ORB, DRB, AST, BLK, STL, TO, FLS, PTS,444);
+                            SezonskiPodaci f = new SezonskiPodaci("2013-14",0, 31, "N/A", Broj_Utakmica, Broj_Utakmica, Broj_Minuta, Pokusani_Sve, Pogodjeni_Sve, ThreeAtt, ThreeMade, TwoAtt, TwoMade, FreeAtt, FreeMade, ORB, DRB, AST, BLK, STL, TO, FLS, PTS,444);
                             f.DajProcenat_Sut_Sve = PCT_Sve;
                             f.DajProcenat_Sut_3 = ThreePCT;
                             f.DajProcenat_Sut_2 = TwoPCT;
@@ -157,7 +161,7 @@ namespace OOIZavrsni
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
             foreach (SezonskiPodaci i in lista_za_upis)
             {

@@ -35,8 +35,9 @@ namespace OOIZavrsni
                         if (linija == null) ide = false;
                         string grad = linija.Split(' ')[0];
                         string ime = linija.Split(' ')[1];
+                        string skr = linija.Split(' ')[2];
                         broj++;
-                        Klub Klub_za_unos = new Klub(ime, grad);
+                        Klub Klub_za_unos = new Klub(ime, grad,skr);
                         lista_za_upis.Add(Klub_za_unos);
                     }
                 }
