@@ -34,8 +34,7 @@ namespace OOIZavrsni
             _nivoElitizma = Convert.ToInt32(num_nivo_elitizma.Value);
             System.Random j = new System.Random();
             double total_fitness = 0.0;
-            _SP = Convert.ToInt32(num_SP.Value);
-            //flp_hromozomi.Controls.Clear();
+           
             for (int i = 0; i < _brojJedinki; i++)
             {
                  Hromozom h = new Hromozom();
@@ -44,7 +43,7 @@ namespace OOIZavrsni
                  h.racunajFitness(109.5, 103.0, 77.1, 51.1, 37.1);
                  _lista_fitnessa.Add(h.Daj_Fitness);
                  broj_hromozoma++;
-                 //MessageBox.Show(""+_generacija[i]);
+                 
             }
             List<Hromozom> temp_lista_hrom = _generacija;
                 while (_brojIteracija > 0)
@@ -113,11 +112,11 @@ namespace OOIZavrsni
                         }
                         if (_najbolji.Daj_Fitness < _generacija[0].Daj_Fitness)
                         {
-                            //MessageBox.Show("Najbolji:" + _najbolji.Daj_Fitness + " G1:" + _generacija[0].Daj_Fitness);
+                         
                             _najbolji.Lista_igraca_hromozom = _generacija[0].Lista_igraca_hromozom;
                             _najbolji.racunajFitness(109.5, 103.0, 77.1, 51.1, 37.1);
                             _najbolji.RegenerisiKod();
-                            //MessageBox.Show("POSLIJE: Najbolji:" + _najbolji.Daj_Fitness + " G1:" + _generacija[0].Daj_Fitness);
+                          
                         }
                         _nova_generacija.Clear();
                         total_fitness = 0;

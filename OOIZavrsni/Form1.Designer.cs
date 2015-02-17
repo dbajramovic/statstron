@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.igračaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,9 +45,11 @@
             this.prepravkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajPodatkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.racunajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.testirajFitnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -170,40 +173,52 @@
             // dodajPodatkeToolStripMenuItem
             // 
             this.dodajPodatkeToolStripMenuItem.Name = "dodajPodatkeToolStripMenuItem";
-            this.dodajPodatkeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dodajPodatkeToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.dodajPodatkeToolStripMenuItem.Text = "Dodaj Podatke";
             this.dodajPodatkeToolStripMenuItem.Click += new System.EventHandler(this.dodajPodatkeToolStripMenuItem_Click);
             // 
             // racunajToolStripMenuItem
             // 
             this.racunajToolStripMenuItem.Name = "racunajToolStripMenuItem";
-            this.racunajToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.racunajToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.racunajToolStripMenuItem.Text = "Racunaj";
             this.racunajToolStripMenuItem.Click += new System.EventHandler(this.racunajToolStripMenuItem_Click);
+            // 
+            // testirajFitnessToolStripMenuItem
+            // 
+            this.testirajFitnessToolStripMenuItem.Name = "testirajFitnessToolStripMenuItem";
+            this.testirajFitnessToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.testirajFitnessToolStripMenuItem.Text = "Testiraj Fitness";
+            this.testirajFitnessToolStripMenuItem.Click += new System.EventHandler(this.testirajFitnessToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
             // 
-            // testirajFitnessToolStripMenuItem
+            // pictureBox1
             // 
-            this.testirajFitnessToolStripMenuItem.Name = "testirajFitnessToolStripMenuItem";
-            this.testirajFitnessToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.testirajFitnessToolStripMenuItem.Text = "Testiraj Fitness";
-            this.testirajFitnessToolStripMenuItem.Click += new System.EventHandler(this.testirajFitnessToolStripMenuItem_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(48, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 233);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "StatsTron";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,6 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem racunajToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testirajFitnessToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

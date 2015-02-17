@@ -28,17 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.num_broj_jedinki = new System.Windows.Forms.NumericUpDown();
             this.num_broj_iteracija = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.num_nivo_elitizma = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.num_SP = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.btn_Kreni = new System.Windows.Forms.Button();
             this.flp_top = new System.Windows.Forms.FlowLayoutPanel();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -47,7 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_broj_jedinki)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_broj_iteracija)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_nivo_elitizma)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_SP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,22 +106,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Nivo Elitizma:";
             // 
-            // num_SP
-            // 
-            this.num_SP.Location = new System.Drawing.Point(86, 91);
-            this.num_SP.Name = "num_SP";
-            this.num_SP.Size = new System.Drawing.Size(120, 20);
-            this.num_SP.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "SP:";
-            // 
             // btn_Kreni
             // 
             this.btn_Kreni.Location = new System.Drawing.Point(7, 118);
@@ -152,17 +133,17 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(213, 14);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "BestFitness";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "BestFitness";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(462, 288);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
@@ -187,8 +168,6 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.flp_top);
             this.Controls.Add(this.btn_Kreni);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.num_SP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.num_nivo_elitizma);
             this.Controls.Add(this.label2);
@@ -201,7 +180,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_broj_jedinki)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_broj_iteracija)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_nivo_elitizma)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_SP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,8 +194,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown num_nivo_elitizma;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown num_SP;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Kreni;
         private System.Windows.Forms.FlowLayoutPanel flp_top;
         private System.Windows.Forms.ProgressBar progressBar1;
