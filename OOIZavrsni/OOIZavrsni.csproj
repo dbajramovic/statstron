@@ -122,6 +122,12 @@
     <Compile Include="Spoji.Designer.cs">
       <DependentUpon>Spoji.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestirajFitness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestirajFitness.Designer.cs">
+      <DependentUpon>TestirajFitness.cs</DependentUpon>
+    </Compile>
     <Compile Include="UnosIgraca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="Spoji.resx">
       <DependentUpon>Spoji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestirajFitness.resx">
+      <DependentUpon>TestirajFitness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnosIgraca.resx">
       <DependentUpon>UnosIgraca.cs</DependentUpon>

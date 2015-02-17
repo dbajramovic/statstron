@@ -103,5 +103,11 @@ namespace OOIZavrsni
             GenetickiAlgoritam ga = new GenetickiAlgoritam();
             ga.Show();
         }
+
+        private void testirajFitnessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TestirajFitness tf = new TestirajFitness();
+            tf.Show();
+        }
     }
 }

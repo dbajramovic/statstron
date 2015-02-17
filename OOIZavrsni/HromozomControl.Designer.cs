@@ -80,7 +80,7 @@
             this.Controls.Add(this.l_broj_hromozoma);
             this.Controls.Add(this.label1);
             this.Name = "HromozomControl";
-            this.Size = new System.Drawing.Size(154, 72);
+            this.Size = new System.Drawing.Size(242, 72);
             this.Load += new System.EventHandler(this.HromozomControl_Load);
             this.DoubleClick += new System.EventHandler(this.HromozomControl_DoubleClick);
             this.ResumeLayout(false);

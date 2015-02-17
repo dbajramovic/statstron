@@ -64,3 +64,7 @@ C:\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\bin\Debug\DAL.dll
 C:\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\bin\Debug\DAL.pdb
 C:\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.UnosPodatakaGA.resources
 C:\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.HromozomControl.resources
+C:\Users\Dado\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.GenetickiAlgoritam.resources
+C:\Users\Dado\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.HromozomControl.resources
+C:\Users\Dado\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.UnosPodatakaGA.resources
+C:\Users\Dado\Documents\Visual Studio 2013\Projects\OOIZavrsni\OOIZavrsni\obj\Debug\OOIZavrsni.TestirajFitness.resources

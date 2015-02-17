@@ -31,6 +31,7 @@ namespace OOIZavrsni
         private void HromozomControl_DoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show(h + "");
+            System.Windows.Forms.Clipboard.SetText(h.Kod+" "+h.Daj_Fitness);
         }
     }
 }

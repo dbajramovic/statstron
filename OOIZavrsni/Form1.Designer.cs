@@ -43,8 +43,9 @@
             this.usporedbaIgračaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prepravkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajPodatkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.racunajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testirajFitnessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,7 +161,8 @@
             // 
             this.prepravkeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dodajPodatkeToolStripMenuItem,
-            this.racunajToolStripMenuItem});
+            this.racunajToolStripMenuItem,
+            this.testirajFitnessToolStripMenuItem});
             this.prepravkeToolStripMenuItem.Name = "prepravkeToolStripMenuItem";
             this.prepravkeToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.prepravkeToolStripMenuItem.Text = "GA";
@@ -172,17 +174,24 @@
             this.dodajPodatkeToolStripMenuItem.Text = "Dodaj Podatke";
             this.dodajPodatkeToolStripMenuItem.Click += new System.EventHandler(this.dodajPodatkeToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
-            // 
             // racunajToolStripMenuItem
             // 
             this.racunajToolStripMenuItem.Name = "racunajToolStripMenuItem";
             this.racunajToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.racunajToolStripMenuItem.Text = "Racunaj";
             this.racunajToolStripMenuItem.Click += new System.EventHandler(this.racunajToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            // 
+            // testirajFitnessToolStripMenuItem
+            // 
+            this.testirajFitnessToolStripMenuItem.Name = "testirajFitnessToolStripMenuItem";
+            this.testirajFitnessToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.testirajFitnessToolStripMenuItem.Text = "Testiraj Fitness";
+            this.testirajFitnessToolStripMenuItem.Click += new System.EventHandler(this.testirajFitnessToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -219,6 +228,7 @@
         private System.Windows.Forms.ToolStripMenuItem dodajPodatkeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem racunajToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testirajFitnessToolStripMenuItem;
     }
 }
 
